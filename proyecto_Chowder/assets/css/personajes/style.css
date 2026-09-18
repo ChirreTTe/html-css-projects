@@ -1,0 +1,106 @@
+:root {
+    /* body */
+    --root-bg-color: rgba(229, 223, 235, 0.993);
+
+    /* nomEncabezado */
+    --root-bg-color-enca: rgba(164, 113, 211, 0.884);
+
+    /* tipo de letras */
+    --root-font-fy-enca: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --root-font-color: #e9f0ea;
+
+    /* navegador */
+    --root-font-color-nav: #ffffff;
+    --root-bg-color-button-nav: rgba(0, 0, 0, 0);
+    --root-bg-color-nav: rgba(164, 113, 211, 0.884);
+
+
+
+    --root-bg-color-gradient: linear-gradient(
+        135deg,
+        #5E145E,
+        #7A1E7A,
+        #c0abab
+    );
+
+    /* parrafoInicial */
+    --root-bg-color-parrafoInicial: rgba(164, 113, 211, 0.884);
+
+
+
+    /* cajitas */
+    --root-bg-color-cajitas: rgba(238, 222, 222, 0.808);
+    --root-boxShadow-cajitas: rgba(164, 113, 211, 0.884);
+
+
+    /* footer */
+    --root-bg-color-footer: rgba(164, 113, 211, 0.884);
+}
+
+
+/* ------------------------------Body------------------------------------------------ */
+
+.personajes {
+    background-color: var(--root-bg-color);
+    display: contents;
+}
+
+.personajes > h1 {
+    text-align: center;
+}
+
+/* ------------------------------Section - Box------------------------------------------- */
+
+.targetPersonaje{
+    transition: transform 0.3s ease;
+}
+
+.targetPersonaje:hover {
+    transform: scale(1.05);
+    
+}
+
+
+.contentPersonaje {
+    margin: 40px
+}
+
+.presentacionPersonajes h2 {
+    padding: 15px;
+    margin: 15px;
+    background: var(--root-bg-color);
+}
+
+.presentacionPersonajes {
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 10px 40px var(--root-bg-color-nav);
+}
+
+.targetPersonaje p {
+    margin: 15px;
+    padding: 15px;
+}
+
+.presentacionPersonajes img{
+    margin: 15px;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px black;
+}
+.targetPersonaje {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* CODIGO PARA QUE EL CONTENIDO SEA BIDIMENSIONAL */
+.contentPersonaje:nth-of-type(even) .targetPersonaje {
+    flex-direction: row-reverse;
+}
+
+
+

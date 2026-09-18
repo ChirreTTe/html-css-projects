@@ -1,0 +1,81 @@
+:root {
+    /* body */
+    --root-bg-color: rgba(229, 223, 235, 0.993);
+
+    /* nomEncabezado */
+    --root-bg-color-enca: rgba(164, 113, 211, 0.884);
+
+    /* tipo de letras */
+    --root-font-fy-enca: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --root-font-color: #e9f0ea;
+
+    /* navegador */
+    --root-font-color-nav: #ffffff;
+    --root-bg-color-button-nav: rgba(0, 0, 0, 0);
+    --root-bg-color-nav: rgba(164, 113, 211, 0.884);
+
+
+
+    --root-bg-color-gradient: linear-gradient(
+        135deg,
+        #5E145E,
+        #7A1E7A,
+        #c0abab
+    );
+
+    /* parrafoInicial */
+    --root-bg-color-parrafoInicial: rgba(164, 113, 211, 0.884);
+
+
+
+    /* cajitas */
+    --root-bg-color-cajitas: rgba(238, 222, 222, 0.808);
+    --root-boxShadow-cajitas: rgba(164, 113, 211, 0.884);
+
+
+    /* footer */
+    --root-bg-color-footer: rgba(164, 113, 211, 0.884);
+}
+
+.formulario {
+    background: var(--root-bg-color);
+    display: contents;
+}
+
+
+/* CARD PRINCIPAL */
+.form-date {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+    margin: 35px;
+    padding: 20px;
+
+    background: var(--root-bg-color-cajitas);
+    border-radius: 15px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover suave (mejora visual sin cambiar estructura) */
+.form-date:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+/* FORM */
+form {
+    padding: 15px;
+    margin: 15px;
+}
+
+
+/* LABELS (mejora legibilidad) */
+label {
+    display: block;
+    margin-top: 10px;
+
+    max-width: 100%;
+    color: #333;
+    font-weight: bold;
+}

@@ -1,0 +1,265 @@
+:root {
+    /* body */
+    --root-bg-color: rgba(229, 223, 235, 0.993);
+
+    /* nomEncabezado */
+    --root-bg-color-enca: rgba(164, 113, 211, 0.884);
+
+    /* tipo de letras */
+    --root-font-fy-enca: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --root-font-color: #e9f0ea;
+
+    /* navegador */
+    --root-font-color-nav: #ffffff;
+    --root-bg-color-button-nav: rgba(0, 0, 0, 0);
+    --root-bg-color-nav: rgba(164, 113, 211, 0.884);
+
+
+
+    --root-bg-color-gradient: linear-gradient(
+        135deg,
+        #5E145E,
+        #7A1E7A,
+        #c0abab
+    );
+
+    /* parrafoInicial */
+    --root-bg-color-parrafoInicial: rgba(164, 113, 211, 0.884);
+
+
+
+    /* cajitas */
+    --root-bg-color-cajitas: rgba(238, 222, 222, 0.808);
+    --root-boxShadow-cajitas: rgba(164, 113, 211, 0.884);
+
+
+    /* footer */
+    --root-bg-color-footer: rgba(164, 113, 211, 0.884);
+}
+
+
+
+.home {
+    background-color: var(--root-bg-color);
+    display: contents;
+
+}
+
+
+/* ------------------------------divider-------------------------------------------- */
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background: var(--root-bg-color-gradient);
+    margin: 20px 0;
+}
+
+
+
+/* ------------------------------header-------------------------------------------- */
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+}
+
+.text_header {
+    background-color: var(--root-bg-color-enca) ;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.text_header > h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--root-font-fy-enca);
+    text-align: center;
+}
+
+
+/* ------------------------------Navegacion-------------------------------------------- */
+
+nav {
+    background-color: var(--root-bg-color-nav);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+
+}
+
+
+
+nav a:hover {
+    background-color: #5E145E;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+/* Simplifique el nav li a */
+li > a {
+    text-decoration: none;
+    color: var(--root-font-color-nav);
+
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------Fondito de entrada-------------------------------------------- */
+
+.fondoInicial  {
+    color:var(--root-font-color);}
+
+.fondoInicial {
+
+    display: flex;
+    align-items: center; /*vertical texto/imagen */
+
+    padding: 10px;
+
+    background: var(--root-bg-color-gradient);
+}
+.fondoInicial h3 {
+    width: 50%;
+    font-size: 20px;
+    margin: 15px;
+}
+.fondoImagen img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+
+/* ------------------------------Parrafo Entrada------------------------------------------- */
+
+.parrafoEntrada p {
+    margin: auto;
+
+    background: var(--root-bg-color-parrafoInicial);
+    font-size: 15px;
+    font-family: var(--root-font-fy-enca);
+    padding: 45px;
+    text-align: center;
+}
+
+/* ------------------------------Box------------------------------------------- */
+
+
+.boxPresentacion {
+    align-items: center;
+    justify-content: center;
+}
+
+.boxPresentacion > h3 {
+    padding: 10px;
+    text-align: center;
+    
+}
+.contenedor {
+
+    display: flex;
+
+    gap: 30px;
+    padding: 40px;
+    margin: 12px;
+    overflow-x: auto;
+}
+
+.cajita {
+    background-color: var(--root-bg-color-cajitas);
+    box-shadow: 0 20px 40px var(--root-bg-color-nav);
+    border-radius: 12px ;
+}
+
+.cajita img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+
+
+
+.cajita p {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.cajita {
+    transition: transform 0.3s ease;
+}
+
+.cajita:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* ------------------------------Article-------------------------------------------- */
+
+
+.article-food {
+    transition: transform 0.3s ease;
+}
+.article-food {
+    transition: transform 0.3s ease;
+}
+
+.article-food:hover {
+    transform: scale(1.05);
+}
+.article-food:active {
+    transform: scale(1.05);
+}
+
+.comidasDivertidas {
+    justify-content: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+
+.comidasDivertidas{
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 10px 40px var(--root-bg-color-nav);
+
+}
+
+.comidasDivertidas img {
+        height: 300px;
+        width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px black;
+}
+
+
+
+/* ------------------------------footer-------------------------------------------- */
+
+.footer {
+    background: var(--root-bg-color-footer);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px 40px;
+    gap: 20px;
+}
+
+.footer img {
+    width: 100px;
+}
+
+
